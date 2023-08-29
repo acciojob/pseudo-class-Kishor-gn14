@@ -6,35 +6,25 @@
     <style>
       #container {
         margin: 20px;
-        position: relative;
       }
 
-      #container::before,
-      #container::after {
+       #container::before {
         content: "Before Element";
         color: #f00;
         font-size: 20px;
-        position: absolute;
       }
 
-      #container::before {
-        top: -30px;
-        left: 0;
-      }
+  
 
       #container::after {
         content: "After Element";
         color: #f00;
         font-size: 20px;
-        position: absolute;
-        bottom: -30px;
-        right: 0;
+       
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <p>This is the main container element</p>
-    </div>
+    <div id="container">This is the main container element</div>
   </body>
 </html>
