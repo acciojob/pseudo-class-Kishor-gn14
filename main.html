@@ -1,16 +1,96 @@
-<!DOCTYPE html>
-
+<!-- <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(204, 204, 204);
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      ul {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        target: _blank;
+      }
+      .player_one,
+      .player_two {
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Playlist</h1>
+    <ul>
+      <li><a href="#" target="_blank">Song 1</a></li>
+      <li><a href="#" target="_blank">Song 2</a></li>
+      <li><a href="#" target="_blank">Song 3</a></li>
+      <li><a href="#" target="_blank">Song 4</a></li>
+      <li><a href="#" target="_blank">Song 5</a></li>
+    </ul>
+    <h2>Now Playing...</h2>
+    <div>
+      <video
+        class="player_one"
+        src="https://www.w3schools.com/tags/movie.mp4"
+        controls
+      ></video>
+      <h2>MP3 songs</h2>
+      <audio class="player_two" controls>
+        <source
+          src="https://www.pagalworld.com.se/files/download/id/64630"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+    the entire body must be written by student -->
+<!-- <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html> -->
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        margin: 20px;
+        position: relative;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      #container::before,
+      #container::after {
+        content: "Before Element";
+        color: #f00;
+        font-size: 20px;
+        position: absolute;
+      }
 
-</body>
+      #container::before {
+        top: -30px;
+        left: 0;
+      }
 
+      #container::after {
+        content: "After Element";
+        color: #f00;
+        font-size: 20px;
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p>This is the main container element</p>
+    </div>
+  </body>
 </html>
